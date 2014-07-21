@@ -1,0 +1,84 @@
+*, *:before, *:after {
+/*	border: red solid 1px;
+*/	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 90%;
+}
+
+header, .hero, footer div {
+	background: #ccc;
+}
+
+
+header {
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.hero {
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.content {
+	height: 250px;
+}
+
+
+.content .left-side {
+	width: 20%;
+	margin-right: 2%;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	background: #ccc;
+}
+
+.content .right-side {
+	width: 78%;
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+
+.content .right-side .right-top {
+	width: 100%;
+	float: left;
+	height: 79%;
+	background: #ccc;
+	display: inline-block;
+	float: left;
+	margin-bottom: 1%
+}
+
+.content .right-side .right-bottom {
+	width: 49%;
+	float: left;
+	height: 18%;
+	background: #ccc;
+	display: inline-block;
+	float: left;
+}
+
+.content .right-side .right-bottom:first-child {
+	margin-right: 2%;
+}
+
+footer .wrapper {
+	height: 60px;
+	margin-top: 10px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
