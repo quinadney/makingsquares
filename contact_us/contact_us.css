@@ -1,0 +1,72 @@
+*, *:before, *:after {
+/*	border: red solid 1px;*/
+	-webkit-box-sizing: border-box;	
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	height: 50px;
+	background: #ccc;
+	margin-bottom: 10px
+}
+
+.column, .columns {
+	float: left;
+	display: inline-block;
+}
+
+.one.column {
+	width: 23%;
+	margin-left: 2%;
+}
+
+
+.three.columns {
+	width: 75%;
+}
+
+.one.column div, .three.columns div {
+	margin-bottom: 10px;
+	background: #ccc
+}
+
+.three.columns div:first-child, .one.column div:last-child {
+	height: 100px;
+}
+
+.three.columns div:last-child {
+	height: 400px;
+}
+
+.one.column div:first-child {
+	height: 200px;
+}
+
+.submit .wrapper div {
+	width: 150px;
+	float: left;
+	height: 40px;
+	background: #ccc;
+	margin-bottom: 10px;
+}
+
+footer .wrapper {
+	height: 75px;
+	background: #ccc
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

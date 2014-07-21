@@ -1,0 +1,82 @@
+*, *:before, *:after {
+/*	border: red solid 1px;*/
+	-webkit-box-sizing: border-box;	
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.header .wrapper {
+	height: 50px;
+	background: #ccc;
+}
+
+.header {
+	margin-bottom: 10px;
+}
+
+.column, .columns {
+	float: left;
+	display: inline-block;
+}
+
+.one.column {
+	width: 23%;
+	margin-right: 2%;
+}
+
+.sidebar div {
+	margin-bottom: 10px;
+	background: #ccc;
+}
+
+.sidebar div:first-child {
+	height: 200px
+}
+
+.sidebar div:nth-child(2) {
+	height: 75px;
+}
+
+.sidebar div:nth-child(3) {
+	height: 50px;
+}
+
+.three.columns {
+	width: 75%
+}
+
+.three.columns > div {
+	margin-bottom: 150px;
+}
+
+.three.columns > div:last-child {
+	margin-bottom: 0;
+}
+
+.items div div {
+	width: 20%;
+	float: left;
+	display: inline-block;
+	height: 150px;
+	background: #ccc;
+}
+
+.items div div:first-child, .items div div:nth-child(2) {
+	margin-right: 20%;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
