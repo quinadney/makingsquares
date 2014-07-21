@@ -1,0 +1,57 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cf:before, .cf:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.wrapper {
+  width: 90%
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+  margin-bottom: 10px;
+}
+.left-side, .right-side{
+  width: 12%;
+}
+.left-side {
+  height: 400px;
+  float: left;
+}
+.right-side {
+  float: left;
+}
+.right-side div:first-child {
+  height: 190px;
+  margin-bottom: 10px;
+}
+.right-side div:nth-child(2) {
+  height: 160px;
+}
+.left-side, .right-side div, .tweets div div, header{
+  background: #ccc;
+}
+.tweets {
+  width: 72%;
+  margin: 0 2%;
+  float: left;
+}
+.tweets div div {
+  height: 75px;
+  margin-bottom: 10px;
+  display: inline-block;
+  float: left;
+}
+.tweets div div:first-child{
+  width: 10%;
+  margin-right: 2%;
+}
+.tweets div div:nth-child(2){
+  width: 88%;
+}
