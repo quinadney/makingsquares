@@ -1,0 +1,64 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+.cf:before, .cf:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+body > div, header, footer {
+  margin-bottom: 10px;
+}
+header, footer {
+  height: 50px;
+}
+.first-row, .second-row, .fourth-row {
+  height: 100px;
+}
+.third-row {
+  height: 200px;
+}
+
+.wrapper {
+  width: 90%
+  margin: 0 auto;
+}
+.first-row div, footer, .second-row div div, .second-row div:nth-child(2), header, .third-row div, .fourth-row div {
+  background: #ccc;
+}
+
+/* COLUMNS */
+/***********/
+.column, .columns {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  /* remove border before actual use */
+  border-right: 10px solid white;
+}
+.half.column { width: 50%; }
+.two.thirds.column {width: 66.66%; }
+.one.third.column { width: 33.33%; }
+.three.quarters.column {width: 75%;}
+.one.quarter.column { width: 25%; }
+.three.eighths.column { width: 37.5%; }
+.one.eighth.column { width: 12.5%; }
+/*.last.column {
+  border-right: none;
+}
+*/
+[class*='column'] {
+  padding-right: 10px;
+}
+[class*='column']:last-of-type {
+  padding-right: 0;
+  /*remove border before actual use */
+  border-right: 0;
+}
+
+
+
